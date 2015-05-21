@@ -1,3 +1,4 @@
+
 package Modelo;
 
 import java.io.BufferedInputStream;
@@ -23,7 +24,7 @@ public class AccesoFichero {
 		
 	}
 	
-	public void escribirFichero(String ruta, Object obj) throws IOException{
+	public void escribirObjeto(String ruta, Object obj) throws IOException{
 		
 		FileOutputStream archivoW = new FileOutputStream(ruta);
 		BufferedOutputStream bufferW = new BufferedOutputStream(archivoW);

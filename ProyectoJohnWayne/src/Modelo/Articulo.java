@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.util.ArrayList;
+
 public class Articulo {
 
 	private String nombre;
@@ -7,6 +9,10 @@ public class Articulo {
 	static float iva;
 	private String descripcion;
 	
+	
+	public Articulo() {
+		// TODO Auto-generated constructor stub
+	}
 	//Constructor
 	public Articulo(String nombre, float precio, String descripcion) {
 		super();
@@ -15,8 +21,8 @@ public class Articulo {
 		this.descripcion = descripcion;
 	}
 	
-	public float calcularPvp(){
-		return (precio * (iva/100));
+	public float calcularPvp(Object obj){
+		return (precio + (precio * (iva/100)));
 	}
 
 	//Getters and setters
@@ -51,7 +57,6 @@ public class Articulo {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
 	
 	
 }
