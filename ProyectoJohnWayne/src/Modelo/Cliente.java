@@ -19,7 +19,7 @@ public class Cliente {
 		this.colorPelo = colorPelo;
 	}
 
-	//Getters and setters
+	//Getters and Setters
 	public String getNombre() {
 		return nombre;
 	}
@@ -59,5 +59,4 @@ public class Cliente {
 	public void setColorPelo(String colorPelo) {
 		this.colorPelo = colorPelo;
 	}
-	
 }

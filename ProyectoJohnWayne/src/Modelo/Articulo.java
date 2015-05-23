@@ -19,7 +19,7 @@ public class Articulo {
 		return (precio * (iva/100));
 	}
 
-	//Getters and setters
+	//Getters and Setters
 	public String getNombre() {
 		return nombre;
 	}
@@ -51,7 +51,4 @@ public class Articulo {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
-	
-	
 }
