@@ -26,7 +26,7 @@ public class AccesoFichero {
 	
 	public void escribirObjeto(String ruta, Object obj) throws IOException{
 		
-		FileOutputStream archivoW = new FileOutputStream(ruta);
+		FileOutputStream archivoW = new FileOutputStream(ruta,true);
 		BufferedOutputStream bufferW = new BufferedOutputStream(archivoW);
 		ObjectOutputStream objEscritura = new ObjectOutputStream(bufferW);
 		
