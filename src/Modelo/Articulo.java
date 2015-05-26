@@ -1,8 +1,9 @@
 package Modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Articulo {
+public class Articulo implements Serializable{
 
 	private String nombre;
 	private float precio;
