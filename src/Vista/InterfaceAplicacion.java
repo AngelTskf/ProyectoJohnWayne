@@ -1,4 +1,4 @@
-package Controlador;
+package Vista;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -7,7 +7,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class ParaVentanaUI extends JFrame {
+import Controlador.ParaInterfaceAplicacion;
+
+public class InterfaceAplicacion extends ParaInterfaceAplicacion {
 
 	private JPanel contentPane;
 
@@ -18,7 +20,7 @@ public class ParaVentanaUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ParaVentanaUI frame = new ParaVentanaUI();
+					InterfaceAplicacion frame = new InterfaceAplicacion();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,13 +32,11 @@ public class ParaVentanaUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ParaVentanaUI() {
+	public InterfaceAplicacion() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
-		setContentPane(contentPane);
+		setBounds(100, 100, 940, 500);
+		
 	}
 
 }

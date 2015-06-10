@@ -10,6 +10,9 @@ public class Cliente implements Serializable{
 	private int edad;
 	private String colorPelo;
 	
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
 	//Constructor
 	public Cliente(String nombre, String apellidos, String dni, int edad,
 			String colorPelo) {
@@ -20,8 +23,14 @@ public class Cliente implements Serializable{
 		this.edad = edad;
 		this.colorPelo = colorPelo;
 	}
-
-	//Getters and setters
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return nombre;
+	}
+	
+	//Getters and Setters
 	public String getNombre() {
 		return nombre;
 	}
@@ -61,5 +70,4 @@ public class Cliente implements Serializable{
 	public void setColorPelo(String colorPelo) {
 		this.colorPelo = colorPelo;
 	}
-	
 }

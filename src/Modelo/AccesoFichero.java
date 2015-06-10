@@ -1,4 +1,3 @@
-
 package Modelo;
 
 import java.io.BufferedInputStream;
@@ -13,7 +12,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public class AccesoFichero {
-
+	
 	public Object leerObjeto(String ruta) throws IOException, ClassNotFoundException{
 		
 		FileInputStream archivoR = new FileInputStream(ruta);
@@ -26,7 +25,7 @@ public class AccesoFichero {
 	
 	public void escribirObjeto(String ruta, Object obj) throws IOException{
 		
-		FileOutputStream archivoW = new FileOutputStream(ruta,true);
+		FileOutputStream archivoW = new FileOutputStream(ruta);
 		BufferedOutputStream bufferW = new BufferedOutputStream(archivoW);
 		ObjectOutputStream objEscritura = new ObjectOutputStream(bufferW);
 		
